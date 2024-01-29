@@ -1,0 +1,185 @@
+{
+  "all-products": [
+    {
+      "id": 1,
+      "title": "Keila reversible coat",
+      "price": "135,99",
+      "prevprice": "169,95",
+      "images": [
+        "https://rino-pelle.com/cdn/shop/files/Fusion.7002310_morel_01_e02fb4b5-c155-474e-9b78-1862d0bfc540.jpg?v=1689665153",
+        "https://rino-pelle.com/cdn/shop/files/Fusion.7002310_morel_02.jpg?v=1689665155",
+        "https://rino-pelle.com/cdn/shop/files/Fusion.7002310_morel_03.jpg?v=1689665157"
+      ],
+      "sizes": ["xs", "s", "m","l","xl"],
+      "colours": ["#737300", "#4C4C4C", "#F2E8D3"],
+      "description": "This long comfortable women's coat will definitely keep you warm and stylish during winter times. This padded reversible coat features a design with zipper closure, two front pockets with snap button closure, a high neck collar with hood and slit zipper details on both sides which makes it easy to move in and protects you from the cold weather. A musthave coat!",
+      "modelsize": 40,
+      "articlename":"Keila.7002310",
+      "composition": "Outershell: 100% polyester; lining: 100% polyester; padding: 100% recycled polyester",
+      "care": "30°C short spin, do not bleach, do not dry-clean, do not iron, do not tumble dry.",
+      "madein": "cn",
+      "reviews": [{"message":"100% satisfied","rate":4.5},{"message":"best Quality","rate":5}],
+      "category": "coat",
+      "featured": true,
+      "sale": true
+    },
+    {
+      "id": 2,
+      "title": "Fusion coat",
+      "price": "84,99",
+      "prevprice": "169,95",
+      "images": [
+        "https://rino-pelle.com/cdn/shop/files/Fusion.7002310_morel_01_e02fb4b5-c155-474e-9b78-1862d0bfc540.jpg?v=1689665153",
+        "https://rino-pelle.com/cdn/shop/files/Fusion.7002310_morel_02.jpg?v=1689665155",
+        "https://rino-pelle.com/cdn/shop/files/Fusion.7002310_morel_03.jpg?v=1689665157"
+      ],
+      "sizes": ["xs", "s", "m"],
+      "colours": ["#737300", "#4C4C4C", "#F2E8D3", "#6F6544"],
+      "description": "This comfy long coat will definitely keep you warm and stylish during winter times. This padded coat features a design with zipper closure, two front pockets with snap button closure and a high neck collar with hood to protect you from the cold weather.",
+      "modelsize": 38,
+      "articlename":"Fusion.7002310",
+      "composition": "Outershell: 100% polyester; lining: 100% polyester; padding: 100% recycled polyester",
+      "care": "30°C short spin, do not bleach, do not dry-clean, do not iron, do not tumble dry.",
+      "madein": "cn",
+      "reviews": [],
+      "category": "coat",
+      "featured": true,
+      "sale": true
+    },
+    {
+      "id": 3,
+      "title": "Keila reversible coat",
+      "price": "135,99",
+      "prevprice": "169,95",
+      "images": [
+        "https://rino-pelle.com/cdn/shop/files/Keila.7002310_taupe-and-stone_01.jpg?v=1689258863",
+        "https://rino-pelle.com/cdn/shop/files/Keila.7002310_taupe-and-stone_02.jpg?v=1689258865",
+        "https://rino-pelle.com/cdn/shop/files/Keila.7002310_taupe-and-stone_03.jpg?v=1689258867",
+        "https://rino-pelle.com/cdn/shop/files/Keila.7002310_taupe-and-stone_04.jpg?v=1689258870"
+      ],
+      "sizes": ["xs", "s", "m"],
+      "colours": ["#737300", "#4C4C4C", "#F2E8D3", "#6F6544"],
+      "description": "This long comfortable women's coat will definitely keep you warm and stylish during winter times. This padded reversible coat features a design with zipper closure, two front pockets with snap button closure, a high neck collar with hood and slit zipper details on both sides which makes it easy to move in and protects you from the cold weather. A musthave coat!",
+      "modelsize": 38,
+      "articlename":"Nusa.7002310",
+      "composition": "Outershell: 100% polyester; lining: 100% polyester; padding: 100% polyester",
+      "madein": "cn",
+      "reviews": [{"message":"100% satisfied","rate":4.5},{"message":"best Quality","rate":5}],
+      "category": "coat"
+    },
+    {
+      "id": 4,
+      "title": "Nusa coat",
+      "price": "90,99",
+      "prevprice": "129,95",
+      "images": [
+        "https://rino-pelle.com/cdn/shop/files/Nusa.7002310_black_01.jpg?v=1689259059",
+        "https://rino-pelle.com/cdn/shop/files/Nusa.7002310_black_02.jpg?v=1689259061",
+        "https://rino-pelle.com/cdn/shop/files/Nusa.7002310_black_03.jpg?v=1689259064",
+        "https://rino-pelle.com/cdn/shop/files/Nusa.7002310_Black_05.jpg?v=1689259066"
+      ],
+      "sizes": ["xs", "s", "m", "l", "xl"],
+      "colours": ["#737300", "#4C4C4C", "#F2E8D3", "#6F6544"],
+      "description": "This is the perfect women's coat for winter times. This warm padded coat features a high neck collar, a hood with cord stoppers, a quilted pattern, a hidden zipper closure and a snap button closure, two front pockets with a zipper and storm cuffs to protect you from the cold weather. The coat is lined.",
+      "modelsize": 38,
+      "articlename":"Nusa.7002310",
+      "composition": "Outershell: 100% polyester; lining: 100% polyester; padding: 100% recycled polyester",
+      "care": "30°C short spin, do not bleach, do not dry-clean, do not iron, do not tumble dry.",
+      "madein": "cn",
+      "reviews": [{"message":"100% satisfied","rate":4.5},{"message":"best Quality","rate":5}],
+      "category": "pant",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "title": "kee cardigan",
+      "price": "77,99",
+      "prevprice": "129,95",
+      "images": [
+        "https://rino-pelle.com/cdn/shop/files/Kee.7002313_black-white-zebra_01.jpg?v=1693403774",
+        "https://rino-pelle.com/cdn/shop/files/Kee.7002313_black-white-zebra_02.jpg?v=1693403776",
+        "https://rino-pelle.com/cdn/shop/files/Kee.7002313_black-white-zebra_03.jpg?v=1693403778",
+        "https://rino-pelle.com/cdn/shop/files/Kee.7002313_Blackwhitezebra_05.jpg?v=1693403780"
+      ],
+      "sizes": ["xs", "s", "m", "l", "xl"],
+      "colours": ["#737300", "#4C4C4C", "#F2E8D3", "#6F6544"],
+      "description": "Long reversible women's coat with faux fur lining. This winter coat features a zipper closure, drawstrings in the waistline, drawstrings to adjust the hood and front pockets on both sides.",
+      "modelsize": 38,
+      "articlename":"kee:700345",
+      "composition": "53% polymide, 24% cotton, 30% nylon",
+      "care": "30C short spin, do not bleach, do not dry-clean, do not iron, do not tumble dry",
+      "madein": "cn",
+      "reviews": [{"message":"100% satisfied","rate":4.5},{"message":"best Quality","rate":5}],
+      "category": "pant",
+      "featured": true,
+      "sale": true
+    },
+    {
+        "id": 6,
+        "title": "Danja coat",
+        "price": "149,95",
+        "images": [
+          "https://rino-pelle.com/cdn/shop/files/Danja.7002420_coral_01.jpg?v=1702904321",
+          "https://rino-pelle.com/cdn/shop/files/Danja.7002420_coral_02.jpg?v=1702904324",
+          "https://rino-pelle.com/cdn/shop/files/Danja.7002420_coral_03.jpg?v=1702904326",
+          "https://rino-pelle.com/cdn/shop/files/Danja.7002420_Coral_05.jpg?v=1702904329"
+        ],
+        "sizes": ["m", "l", "xl"],
+        "colours": ["#737300", "#4C4C4C", "#F2E8D3", "#6F6544"],
+        "description": "Long reversible women's coat with faux fur lining. This winter coat features a zipper closure, drawstrings in the waistline, drawstrings to adjust the hood and front pockets on both sides.",
+        "modelsize": 38,
+        "articlename":"kee:700345",
+        "composition": "Outershell: 78% viscose, 15% polyamide, 7% elastane; lining: 100% polyester",
+        "care": "30C short spin, do not bleach, do not dry-clean, do not iron, do not tumble dry",
+        "madein": "cn",
+        "reviews": [{"message":"100% satisfied","rate":4.5},{"message":"best Quality","rate":5}],
+        "category": "coat"
+      },
+      {
+          "id": 7,
+          "title": "Elona waistcoat",
+          "price": "69,95",
+          "prevprice": "129,95",
+          "images": [
+            "https://rino-pelle.com/cdn/shop/files/Elona.5002421_birch_01.jpg?v=1702904137",
+            "https://rino-pelle.com/cdn/shop/files/Elona.5002421_birch_02.jpg?v=1702904140",
+            "https://rino-pelle.com/cdn/shop/files/Elona.5002421_birch_03.jpg?v=1702904143",
+            "https://rino-pelle.com/cdn/shop/files/Elona.5002421_Birch_05.jpg?v=1702904145"
+          ],
+          "sizes": ["xs", "s", "m"],
+          "colours": ["#737300", "#4C4C4C", "#F2E8D3", "#6F6544"],
+          "description": "Double breasted ladies coat. This coat comes in a lightweight scuba quality with a soft feel. This coat features a classic lapel, two side slit pockets and a button closure. Because of the stretchy fabric, this coat is very comfortable to wear. Our model is 178 cm tall and is wearing a size (EU) 38.",
+          "modelsize": 38,
+          "articlename":"Danja.7002420",
+          "composition": "53% polymide, 24% cotton, 30% nylon",
+          "care": "30C short spin, do not bleach, do not dry-clean, do not iron, do not tumble dry",
+          "madein": "cn",
+          "reviews": [{"message":"100% satisfied","rate":4.5},{"message":"best Quality","rate":5}],
+          "category": "waistcoat",
+          "featured": true,
+          "sale": true
+        },
+        {
+            "id": 8,
+            "title": "Naura sweater",
+            "price": "51,99",
+            "prevprice": "64,95",
+            "images": [
+              "https://rino-pelle.com/cdn/shop/files/Naura.7012311_beige-cloudy_01.jpg?v=1689601255",
+              "https://rino-pelle.com/cdn/shop/files/Naura.7012311_beige-cloudy_02.jpg?v=1689601258",
+              "https://rino-pelle.com/cdn/shop/files/Naura.7012311_beige-cloudy_03.jpg?v=1689601260",
+              "https://rino-pelle.com/cdn/shop/files/Naura.7012311_beige-cloudy_05.jpg?v=1689601262"
+            ],
+            "sizes": ["xs", "m", "xl"],
+            "colours": ["#010101", "#4C4C4C", "#F2E8D3", "#6F6544"],
+            "description": "This cosy women's sweater with a cloudy knit will definitely keep you warm on those cooler days. This soft turtleneck sweater features a relaxed boxy fit and long ribbed details at the cuffs and bottom.",
+            "modelsize": 38,
+            "articlename":"Naura.7012311",
+            "composition": "67% nylon, 18% polyester, 15% viscose",
+            "care": "30°C short spin, do not bleach, do not dry-clean, do not tumble dry, wool cleaning.",
+            "madein": "cn",
+            "reviews": [{"message":"100% satisfied","rate":4.5},{"message":"best Quality","rate":5}],
+            "category": "sweater"
+          }
+  ]
+}

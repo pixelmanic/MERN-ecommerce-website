@@ -11,3 +11,134 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: body-font;
+  src: url(./Styles/Fonts/AkzidenzGroteskPro-Regular.woff2);
+}
+
+@font-face {
+  font-family: body-bold-font;
+  src: url(./Styles/Fonts/AkzidenzGroteskPro-Bold.woff2);
+}
+
+@font-face {
+  font-family: heading-font;
+  src: url(./Styles/Fonts/SaolDisplay-Light.woff2);
+}
+
+@font-face {
+  font-family: heading-italic-font;
+  src: url(./Styles/Fonts/SaolDisplay-LightItalic.woff2);
+}
+
+h1 , h2, h3, h4, span, p, li{
+  font-family: body-font;
+  font-weight: 400;
+}
+
+:focus {
+  outline: none !important;
+}
+
+::selection {
+  background-color: black !important;
+  color: white !important;
+}
+
+.main-button {
+  color: #ffffff;
+  font-family: body-font;
+  position: relative;
+  font-size: 14px;
+  padding-bottom: 6px;
+  text-decoration: none;
+  z-index: 5;
+}
+
+.main-button::after {
+  content: "";
+  transform-origin: left;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  transform: scaleX(1); /* Start with no underline */
+  background: white;
+  height: 1px;
+  transition: transform 0.3s ease-out, width 0.3s ease-out;
+}
+
+.main-button:hover::after {
+  width: 0;
+  transform: scaleX(0);
+}
+
+.main-button-black {
+  color: black;
+  font-family: body-font;
+  position: relative;
+  padding-bottom: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  z-index: 5;
+}
+
+.main-button-black::after {
+  content: "";
+  transform-origin: left;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  transform: scaleX(1); /* Start with no underline */
+  background: black;
+  height: 1px;
+  transition: transform 0.3s ease-out, width 0.3s ease-out;
+}
+
+.main-button-black:hover::after {
+  width: 0;
+  transform: scaleX(0);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+.sale-badge {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  background-color: #CE3737;
+  color: white;
+  padding: 5px 9px;
+  text-transform: uppercase;
+  font-size: 12px;
+  z-index: 2;
+}
+
+.ant-rate {
+  color: black !important;
+}
+
+.loading-box {
+  height: calc(100vh - 58px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

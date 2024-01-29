@@ -1,0 +1,82 @@
+.accessories-section {
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.acces-card {
+    width: calc(50% - 2px);
+}
+
+.acces-image-wrapper {
+    position: relative;
+    padding-bottom: 100%;
+    display: block;
+}
+
+.acces-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.acces-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    padding: 0 100px;
+    margin: 0 auto;
+    max-width: 750px;
+    z-index: 1;
+}
+
+.acces-title {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.acces-content > h2 {
+    color: white;
+    font-size: 32px;
+    font-family: heading-font;
+    margin: 7px 0;
+}
+
+.acces-content > h2 > span {
+    font-family: heading-italic-font;
+}
+
+.acces-image-wrapper::after{
+    content: '';
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 69.9%, rgba(0, 0, 0, 1) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: .7;
+}
+
+@media (max-width: 1024px) {
+    .accessories-section {
+        display: block;
+    }
+    .acces-card {
+        width: 100%;
+        margin-bottom: 2px;
+    }
+    .acces-image-wrapper {
+        height: calc(100vh - 78px);
+        min-height: 400px;
+    }
+    .acces-content {
+        padding: 0 16px;
+    }
+}

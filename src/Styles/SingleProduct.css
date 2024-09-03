@@ -97,6 +97,14 @@
     padding-right: 40px;
 }
 
+.color-box {
+    cursor: pointer;
+}
+
+.active-color {
+    opacity: 50%;
+}
+
 .info-sizes-dropdown {
     width: 100%;
     position: relative;

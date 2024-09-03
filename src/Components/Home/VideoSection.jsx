@@ -53,7 +53,7 @@ export default function VideoSection() {
           poster="https://rino-pelle.com/cdn/shop/files/preview_images/f6ac141fd99142eb93d4543d9efd857c.thumbnail.0000000000_small.jpg?v=1688739086"
         >
           <source
-            src="https://cdn.shopify.com/videos/c/vp/f6ac141fd99142eb93d4543d9efd857c/f6ac141fd99142eb93d4543d9efd857c.HD-1080p-7.2Mbps-16056297.mp4"
+            src="https://cdn.shopify.com/videos/c/vp/f548efe9a81a4e5e94cbb09c9f1b3163/f548efe9a81a4e5e94cbb09c9f1b3163.HD-1080p-7.2Mbps-24767908.mp4"
             type="video/mp4"
           />
         </video>

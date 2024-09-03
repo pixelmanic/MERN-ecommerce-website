@@ -1,18 +1,15 @@
-import React, {useState} from "react";
+import React from "react";
 import { HeartOutlined, HeartFilled } from "@ant-design/icons";
 import { Link } from "react-router-dom";
-import '../Styles/Card.css'
+import "../Styles/Card.css";
+import { useFilterContext } from "../Contexts/FilterContext";
 
 export default function Card(product) {
-    const {id , title, price, prevprice, images, sizes, colours} = product;
-  const [isWishListed, setWishListed] = useState(false);
+  const { id, title, price, prevprice, images, sizes, colours } = product;
+  const { wishlistProducts, wishlist_products } = useFilterContext();
 
-    const wishListToggle = () => {
-        setWishListed(!isWishListed);
-      };
-    
-      const wishListStyle = { display: isWishListed ? "none" : "block" };
-      const wishListedStyle = { display: !isWishListed ? "none" : "block" };
+  // Check if the product is in the wishlist
+  const isWishListed = wishlist_products.some((product) => product.id === id);
 
   return (
     <div key={id} className="product-card">
@@ -30,12 +27,12 @@ export default function Card(product) {
         <div className="sale-badge">
           <span>sale</span>
         </div>
-        <div onClick={wishListToggle} className="product-wishlist">
-          <HeartOutlined className="heart-icon" style={wishListStyle} />
-          <HeartFilled
-            className="heart-icon heart-filled"
-            style={wishListedStyle}
-          />
+        <div onClick={() => wishlistProducts(id)} className="product-wishlist">
+          {isWishListed ? (
+            <HeartFilled className="heart-icon heart-filled" />
+          ) : (
+            <HeartOutlined className="heart-icon" />
+          )}
         </div>
         <div className="product-card-menu">
           <div className="product-color-box">
@@ -60,9 +57,7 @@ export default function Card(product) {
                   <span
                     key={size}
                     className={
-                      sizes.includes(size)
-                        ? "enabled-size"
-                        : "disabled-size"
+                      sizes.includes(size) ? "enabled-size" : "disabled-size"
                     }
                   >
                     {size}

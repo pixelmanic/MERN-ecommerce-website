@@ -18,17 +18,17 @@ export default function Home() {
             loop
             preload="metadata"
             muted
-            poster="//rino-pelle.com/cdn/shop/files/preview_images/2349e4898bda41bcb8307ca8458ee19e.thumbnail.0000000000_small.jpg?v=1688739093"
+            poster="//rino-pelle.com/cdn/shop/files/preview_images/108cd08104d940dbb64588f7c6b76141.thumbnail.0000000000_small.jpg?v=1721810321"
           >
             <source
-              src="https://cdn.shopify.com/videos/c/vp/2349e4898bda41bcb8307ca8458ee19e/2349e4898bda41bcb8307ca8458ee19e.HD-1080p-7.2Mbps-16056296.mp4"
+              src="http://rino-pelle.com/cdn/shop/videos/c/vp/108cd08104d940dbb64588f7c6b76141/108cd08104d940dbb64588f7c6b76141.HD-1080p-7.2Mbps-32243142.mp4?v=0"
               alt="banner.mp4"
             />
           </video>
           <div className="banner-text">
-            <span>up to 50% off on selected items</span>
+            <span>IT'S HERE!</span>
             <h1 className="banner-title">
-              Winter <span>Sale</span>
+            NEW <span> Arrivals</span>
             </h1>
             <span className="main-button">Shop now</span>
           </div>

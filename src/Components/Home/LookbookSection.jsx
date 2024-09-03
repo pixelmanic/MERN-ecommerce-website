@@ -7,7 +7,7 @@ export default function LookbookSection() {
     <section className="lookbook-section">
       <Link to="/lookbook" className="lookbook-box">
         <img
-          src="https://rino-pelle.com/cdn/shop/files/RinoPelle_6dec_202265907_copy.jpg?v=1689332429"
+          src="https://rino-pelle.com/cdn/shop/files/HIGH-TIDES.jpg?v=1708416110"
           alt="Explore Lookbook"
         />
         <div className="lookbook-content">

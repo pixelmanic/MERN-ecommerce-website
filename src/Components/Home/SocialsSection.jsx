@@ -18,7 +18,7 @@ export default function SocialsSection() {
           rel="noreferrer"
         >
           <img
-            src="https://i.pinimg.com/736x/35/e3/8c/35e38c4997f5c44422dde6f4c26b9d4f.jpg"
+            src="https://scontent.cdninstagram.com/v/t51.2885-15/447356728_856508649622224_3650087259532079200_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=18de74&_nc_ohc=WuaIjkgDQxUQ7kNvgFtAxI4&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AYCb-sz2_CGxozbHKI1Ru1dd11rOvbRryYMdVxgOCuUjuA&oe=6670897B"
             alt="social-link"
             className="social-img"
           />

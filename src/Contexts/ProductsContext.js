@@ -1,7 +1,6 @@
 import React, { useReducer, useContext, useEffect, createContext } from "react";
 import axios from "axios";
 import reducer from "../Reducer/ProductReducer";
-import DisabledContext from "antd/es/config-provider/DisabledContext";
 
 const AppContext = createContext();
 
@@ -14,6 +13,7 @@ const initialState = {
   featuredProducts: [],
   isSingleLoading: false,
   singleProduct: {},
+  initialColor: ""
 };
 
 function AppProvider({ children }) {

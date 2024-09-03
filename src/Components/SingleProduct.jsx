@@ -17,14 +17,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import required modules
 import { Pagination } from "swiper/modules";
+
+import { useCartContext } from "../Contexts/cartContext";
 
 export default function SingleProduct() {
   const API = "http://localhost:8000/all-products";
-  const { isSingleLoading, getSingleProduct, singleProduct } =
+  const { isSingleLoading, getSingleProduct, singleProduct, initialColor } =
     useProductContext();
+  const { addToCart } = useCartContext();
   const { id } = useParams();
   const [tabActive, setTabActive] = useState("compo");
   const [showRev, setShowRev] = useState(false);
@@ -32,7 +33,20 @@ export default function SingleProduct() {
   const [sortRev, setSortRev] = useState("Most recent");
   const [sortedReviews, setSortedReviews] = useState([]);
   const [sizesDraw, setSizesDraw] = useState(false);
+  const [selectedColor, setSelectedColor] = useState("");
+  const [selectedSize, setSelectedSize] = useState("");
+  const quantity = 1;
+  
+  useEffect(() => {
+    getSingleProduct(`${API}?id=${id}`);
+  }, [id]);
 
+  useEffect(() => {
+    if(initialColor) {
+      setSelectedColor(initialColor)
+    }
+  }, [initialColor])
+  
   const {
     id: alias,
     title,
@@ -48,12 +62,7 @@ export default function SingleProduct() {
     composition,
     madein,
     reviews,
-    category,
   } = singleProduct;
-
-  useEffect(() => {
-    getSingleProduct(`${API}?id=${id}`);
-  }, []);
 
   // reviews Section Logic 👇
 
@@ -92,6 +101,11 @@ export default function SingleProduct() {
     setSizesDraw(!sizesDraw);
   }
 
+  function getSize(size) {
+    setSelectedSize(size)
+    swToggle()
+  }
+
   if (isSingleLoading) {
     return (
       <div>
@@ -101,7 +115,7 @@ export default function SingleProduct() {
   }
 
   return (
-    <main className="single-product-page">
+    <main key={id} className="single-product-page">
       <section className="product-section">
         <div className="product-wrapper">
           <div className="product-media">
@@ -132,7 +146,11 @@ export default function SingleProduct() {
               >
                 {images &&
                   images.map((image) => {
-                    return <SwiperSlide><img src={image} alt="product-media" /></SwiperSlide>;
+                    return (
+                      <SwiperSlide>
+                        <img src={image} alt="product-media" />
+                      </SwiperSlide>
+                    );
                   })}
               </Swiper>
             </div>
@@ -151,8 +169,11 @@ export default function SingleProduct() {
                     colours.map((allColor) => {
                       return (
                         <span
-                          className="color-box"
+                          className={`color-box ${selectedColor === allColor ? "active-color" : ""}`}
                           style={{ backgroundColor: allColor }}
+                          onClick={() => {
+                            setSelectedColor(allColor);
+                          }}
                         ></span>
                       );
                     })}
@@ -160,20 +181,25 @@ export default function SingleProduct() {
               </div>
               <div className="info-sizes-dropdown">
                 <span onClick={swToggle}>
-                  Choose Size <DownOutlined />
+                  {!selectedSize ? "Choose Size" : selectedSize} <DownOutlined />
                 </span>
                 <ul style={{ display: sizesDraw ? "block" : "none" }}>
-                  <li>34</li>
-                  <li>36</li>
-                  <li>38</li>
-                  <li>40</li>
-                  <li>42</li>
-                  <li>44</li>
-                  <li>46</li>
-                  <li>48</li>
+                  {sizes &&
+                    sizes.map((size) => {
+                      return (
+                        <li onClick={() => getSize(size)}>{size}</li>
+                      );
+                    })}
                 </ul>
               </div>
-              <span className="info-checkout-btn">add to cart</span>
+              <span
+                className="info-checkout-btn"
+                onClick={() =>
+                  addToCart(id, selectedColor, selectedSize, quantity, singleProduct)
+                }
+              >
+                add to cart
+              </span>
               <p className="model-size">
                 The model is wearing size {modelsize}
               </p>

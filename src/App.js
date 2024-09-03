@@ -1,6 +1,5 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
 import Home from './Components/Home/Home';
 import {LoadingOutlined} from "@ant-design/icons";
 import Error from './Error';
@@ -14,7 +13,7 @@ const About = React.lazy(() => import('./Components/About'))
 const Blog = React.lazy(() => import('./Components/Blog'))
 const Wishlist = React.lazy(() => import('./Components/Wishlist'))
 const SingleProduct = React.lazy(() => import('./Components/SingleProduct'))
-
+const SearchPage = React.lazy(() => import('./Components/SearchPage'))
 
 function App() {
   return (
@@ -32,6 +31,7 @@ function App() {
             <Route path='/blog' element={<Suspense fallback={<LoadingOutlined />}><Blog /></Suspense>} />
             <Route path='/wishlist' element={<Suspense fallback={<LoadingOutlined />}><Wishlist /></Suspense>} />
             <Route path='/products/:id' element={<Suspense fallback={<LoadingOutlined />}><SingleProduct /></Suspense>} />
+            <Route path='/searched-products' element={<Suspense fallback={<LoadingOutlined />}><SearchPage /></Suspense>} />
             <Route path='*' element={<Error />} />
           </Routes>
         </div>

@@ -1,21 +1,24 @@
-import React, { useState } from "react";
-import "../Styles/AllProducts.css";
-import { SwapOutlined } from "@ant-design/icons";
-import Card from "./Card";
-import Sort from "./Sort";
+import { useState } from "react";
 import { useFilterContext } from "../Contexts/FilterContext";
+import { SwapOutlined } from "@ant-design/icons";
+import Sort from "./Sort";
+import Card from "./Card";
 
-export default function Shop() {
-  const { filtered_products } = useFilterContext();
+const SearchPage = () => {
+  const {
+    filters: { text },
+    filtered_products,
+  } = useFilterContext();
   const [filterOpen, setFilterOpen] = useState(false);
 
   const filterToggle = (value) => {
     setFilterOpen(value);
   };
+
   return (
     <main className="all-prod-wrapper">
       <div className="allp-upper">
-        <h1>All Products</h1>
+        <h1>Searched results: {text}</h1>
       </div>
       <div className="allp-lower">
         <div
@@ -32,7 +35,7 @@ export default function Shop() {
           style={{ marginTop: filterOpen ? "0" : "-52px" }}
         >
           <div className={`allp-filters ${filterOpen ? "active" : ""}`}>
-            <Sort filterToggle={filterToggle} filterType="ALL" />
+            <Sort filterToggle={filterToggle} filterType="SEARCH" />
           </div>
           <div className="allp-cards">
             <div className="product-grid">
@@ -55,4 +58,6 @@ export default function Shop() {
       </div>
     </main>
   );
-}
+};
+
+export default SearchPage;

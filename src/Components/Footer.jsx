@@ -8,7 +8,6 @@ export default function Footer() {
   const [emailEmpty , setEmailEmpty] = useState(false)
   const [emailWrong, setEmailWrong] = useState(false)
     
-  console.log(email)
   const emailValidator = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   
   useEffect(()=>{

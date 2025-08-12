@@ -102,69 +102,6 @@ export default function FilterReducer(state, action) {
         searched_products: [],
       };
 
-    // case "FILTER_PRODUCTS": {
-    //   const { all_products } = state;
-    //   const filterValues = action.payload;
-    //   let tempFilterProducts = [...all_products];
-
-    //   const sizes = filterValues[0] || [];
-    //   const categories = filterValues[1] || [];
-    //   const colors = filterValues[2] || [];
-    //   const prices = filterValues[3] || [];
-
-    //   // If all filters are empty, return all products
-    //   if (
-    //     !sizes.length &&
-    //     !categories.length &&
-    //     !colors.length &&
-    //     !prices.length
-    //   ) {
-    //     return {
-    //       ...state,
-    //       filtered_products: all_products,
-    //     };
-    //   }
-
-    //   // Step 1: Filter by categories if any are specified
-    //   if (categories.length > 0) {
-    //     tempFilterProducts = tempFilterProducts.filter((product) =>
-    //       categories.includes(product.category)
-    //     );
-    //   }
-
-    //   // Step 2: Filter by sizes if any are specified
-    //   if (sizes.length > 0) {
-    //     tempFilterProducts = tempFilterProducts.filter(
-    //       (product) =>
-    //         product.sizes && product.sizes.some((size) => sizes.includes(size))
-    //     );
-    //   }
-
-    //   // Step 3: Filter by colors if any are specified
-    //   if (colors.length > 0) {
-    //     tempFilterProducts = tempFilterProducts.filter(
-    //       (product) =>
-    //         product.colours &&
-    //         product.colours.some((color) => colors.includes(color))
-    //     );
-    //   }
-
-    //   // Step 4: Filter by price if specified
-    //   if (prices.length === 2) {
-    //     const [minPrice, maxPrice] = prices;
-    //     tempFilterProducts = tempFilterProducts.filter((product) => {
-    //       let productPrice = parseFloat(product.price.replace(",", "."));
-    //       productPrice = Math.floor(productPrice);
-    //       return productPrice >= minPrice && productPrice <= maxPrice;
-    //     });
-    //   }
-
-    //   return {
-    //     ...state,
-    //     filtered_products: tempFilterProducts,
-    //   };
-    // }
-
     case "FILTER_PRODUCTS": {
       const { all_products, searched_products } = state;
       const { filterValues, filterType } = action.payload;
